@@ -1,4 +1,7 @@
-export const msToMHS = (ms: number): string => {
+/**
+ * Milleseconds to Hours - Minutes - Seconds
+ */
+export const msToHMS = (ms: number): string => {
   const sign = ms < 0 ? '-' : '';
 
   const abs = Math.abs(ms);

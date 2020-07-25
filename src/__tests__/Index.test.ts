@@ -1,6 +1,6 @@
-import { msToMHS } from '../index';
+import { msToHMS } from '../index';
 
-describe('MS to MHS', () => {
+describe('MS to Hours - Minutes - Seconds', () => {
   const numbers: Array<[number, string]> = [
     [0, '0:00:00'],
     [-0, '0:00:00'],
@@ -30,7 +30,7 @@ describe('MS to MHS', () => {
 
   numbers.forEach((i) => {
     it(`${i[0]}`, () => {
-      expect(msToMHS(i[0])).toBe(i[1]);
+      expect(msToHMS(i[0])).toBe(i[1]);
     });
   });
 });
