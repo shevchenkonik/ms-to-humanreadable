@@ -1,0 +1,20 @@
+{
+  "name": "ms-to-time",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shevchenkonik/ms-to-time.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shevchenkonik/ms-to-time/issues"
+  },
+  "homepage": "https://github.com/shevchenkonik/ms-to-time#readme"
+}
