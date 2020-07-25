@@ -1,1 +1,1 @@
-# MS to time
+# MS to Human readable

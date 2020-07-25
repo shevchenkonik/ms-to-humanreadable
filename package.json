@@ -1,5 +1,5 @@
 {
-  "name": "ms-to-time",
+  "name": "ms-to-humanreadable",
   "version": "1.0.0",
   "description": "MS to any formats",
   "main": "lib/index.js",
@@ -20,15 +20,15 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shevchenkonik/ms-to-time.git"
+    "url": "git+https://github.com/shevchenkonik/ms-to-humanreadable.git"
   },
   "keywords": ["formatting", "date"],
   "author": "Nik Shevchenko <shevchenko.nik@icloud.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/shevchenkonik/ms-to-time/issues"
+    "url": "https://github.com/shevchenkonik/ms-to-humanreadable/issues"
   },
-  "homepage": "https://github.com/shevchenkonik/ms-to-time#readme",
+  "homepage": "https://github.com/shevchenkonik/ms-to-humanreadable#readme",
   "devDependencies": {
     "@types/jest": "^26.0.7",
     "@typescript-eslint/eslint-plugin": "^3.7.0",
