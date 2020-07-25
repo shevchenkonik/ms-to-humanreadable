@@ -1,20 +1,43 @@
 {
   "name": "ms-to-time",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "MS to any formats",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest --config jestconfig.json",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint './src/*.{js,ts,tsx}' --quiet --fix",
+    "build": "tsc",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags"
   },
+  "files": [
+    "lib/**/*"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/shevchenkonik/ms-to-time.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["formatting", "date"],
+  "author": "Nik Shevchenko <shevchenko.nik@icloud.com>",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/shevchenkonik/ms-to-time/issues"
   },
-  "homepage": "https://github.com/shevchenkonik/ms-to-time#readme"
+  "homepage": "https://github.com/shevchenkonik/ms-to-time#readme",
+  "devDependencies": {
+    "@types/jest": "^26.0.7",
+    "@typescript-eslint/eslint-plugin": "^3.7.0",
+    "@typescript-eslint/parser": "^3.7.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "jest": "^26.1.0",
+    "prettier": "^2.0.5",
+    "ts-jest": "^26.1.3",
+    "typescript": "^3.9.7"
+  }
 }
